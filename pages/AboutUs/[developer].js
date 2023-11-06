@@ -1,14 +1,6 @@
 import { useRouter } from 'next/router'
+import { details } from '.'
 
-export const details = [
-
-    { id : 1, name: 'Yash', role: 'Senior Developer'},
-    
-    { id : 2, name: 'Vaibhav', role: 'Backend Developer'},
-    
-    { id : 3, name: 'Suresh', role: 'Frontend Developer'}
-    
-    ]
 function Detail()
 {
  
@@ -26,8 +18,8 @@ function Detail()
   return <div>
 
    <h1>Developer Detail</h1>
-   <h3>Developer Name:- {id?details[id-1].name:'No Developer exists'}</h3>
-   <h3>Developer Role:- {id?details[id-1].role:'No Developer exists'}</h3>
+   <h3>Developer Name:- {details[id-1].name}</h3>
+   <h3>Developer Role:- {details[id-1].role}</h3>
     
    
   </div>
